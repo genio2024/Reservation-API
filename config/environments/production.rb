@@ -3,13 +3,13 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-  config.action_mailer.default_url_options = { host: 'https://carhub-nxj0.onrender.com',  protocol: "https" }
+  config.action_mailer.default_url_options = { host: 'https://reservation-api-3po5.onrender.com/',  protocol: "https" }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
-  domain:               'my.domain.com',
+  domain:               'gmail.com',
   user_name:            'dnhanale@gmail.com',
   password:             'qzcroitvqzmtgphr',
   authentication:       'plain',
