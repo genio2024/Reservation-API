@@ -1,18 +1,20 @@
 databases:
   - name: carhub-db
-    databaseName: carhub_db_s5re
-    user: carhub_db_s5re_user
+    databaseName: carhub_db_4st6
+    user: carhub_db_4st6_user
 
 services:
   - type: web
-    name: carHub
+    name: car-api
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: carhub_db_s5re
+          name: carhub_db_4st6
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
+      - key: WEB_CONCURRENCY
+        value: 2 # sensible default
