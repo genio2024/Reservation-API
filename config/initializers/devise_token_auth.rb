@@ -62,11 +62,11 @@ DeviseTokenAuth.setup do |config|
   # By default DeviseTokenAuth will not send confirmation email, even when including
   # devise confirmable module. If you want to use devise confirmable module and
   # send email, set it to true. (This is a setting for compatibility)
-  config.send_confirmation_email = true
+  # config.send_confirmation_email = true
 
   # config.default_confirm_success_url = "confirmed"
 
-  config.default_confirm_success_url = 'https://dev--cozy-concha-614dd5.netlify.app/login'
+  # config.default_confirm_success_url = 'https://dev--cozy-concha-614dd5.netlify.app/login'
 
   # config.default_password_reset_url = 'http://localhost:5173/reset-password'
 
